@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejecicio2</title>
+</head>
+
+<center><body bgcolor="orange">
+    <h1 >Parrales Cruzatti William Steven '5A'</h1>
+    <h1>Productos Alimenticios</h1>
+    <script>
+        function Producto_alimenticio(Codigo,Nombre,Precio){
+            this.Codigo=Codigo;
+            this.Nombre=Nombre;
+            this.Precio=Precio;
+        }
+        var producto1=new Producto_alimenticio(011,"salsa de tomate grande","$ 3.75");
+        var producto2=new Producto_alimenticio(012,"Sachet Mostaza","$ 1.75");
+        var producto3=new Producto_alimenticio(013,"Galleta grandes","$ 2.30");
+        var array=[producto1,producto2,producto3];
+        for (i = 0; i < array.length; i++) {imprimeDatos(array[i])}
+        function imprimeDatos(array){
+            document.write("Código: "+array.Codigo+", ");
+            document.write("Nombre: "+array.Nombre+", ");
+            document.write("Precio: "+array.Precio+"<br>");
+        }
+    </script>
+</body></center>
+</html>
